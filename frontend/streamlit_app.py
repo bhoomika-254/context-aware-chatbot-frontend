@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration - Use environment variable for backend URL
-API_URL = os.getenv("API_URL", "https://huggingface.co/spaces/bhoomika19/context-aware-research-bott")
+API_URL = os.getenv("API_URL", "https://bhoomika19-context-aware-research-bott.hf.space")
 BRIEF_ENDPOINT = f"{API_URL}/brief"
 HEALTH_ENDPOINT = f"{API_URL}/health"
 
@@ -598,3 +598,4 @@ if not st.session_state.messages:
         </div>
     </div>
     """, unsafe_allow_html=True)
+
